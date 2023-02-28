@@ -1,222 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="master .css" />
-  </head>
-  <body>
-    <header class="pageheader">
-      <nav class="nav_bar">
-        <ul id="navbar_list"></ul>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="master .css">
+</head>
+<body>
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
     </header>
-    <header class="main_hero">
-      <h1>landing page</h1>
-    </header>
-    <main>
-      <section id="sec1" data-nav="section 1" class="your-active-class">
-        <div class="landing_container">
-          <h2>section 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            diam ornare, tincidunt odio at, convallis lacus. Duis varius pretium
-            turpis sit amet iaculis. Maecenas dictum, tortor eleifend tempor
-            placerat, lacus urna tempus ligula, eu accumsan nunc dolor sed arcu.
-            Donec ullamcorper erat tempor arcu rutrum condimentum. Donec
-            tincidunt euismod ante sed dignissim. Pellentesque at sem cursus,
-            hendrerit ante ornare, tristique velit. Proin malesuada ante eget
-            nibh lacinia imperdiet. Curabitur sed venenatis turpis, sed pretium
-            ante. Phasellus cursus pretium purus, sed mattis ante vulputate non.
-            Ut lorem ante, eleifend sed pretium sit amet, ornare quis augue.
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Vivamus dignissim commodo volutpat.
-            Vestibulum dignissim laoreet elementum. Cras id condimentum nunc.
-            Phasellus ultricies cursus nunc ut commodo. Quisque nec nisl vel leo
-            rhoncus Phasellus ullamcorper, ante quis cursus fringilla, lacus
-            quam mollis justo, euismod sagittis enim eros eu eros. Donec metus
-            dui, tempor dictum ex a, scelerisque tincidunt enim. Nunc finibus
-            vitae enim sed faucibus. Praesent auctor at eros nec gravida. Sed
-            congue tristique ligula sit amet bibendum. Aliquam venenatis
-            fringilla neque sed laoreet. Fusce lacinia leo arcu, in elementum
-            orci sodales ut. Cras aliquam interdum eros tempus molestie.
-            Phasellus auctor tortor eget interdum varius. Mauris rhoncus magna
-            vel vestibulum pharetra. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Vestibulum neque purus,
-            gravida quis egestas at, pulvinar sed mauris. Nam posuere Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-            blandit quam. Fusce lacinia pulvinar purus. Nunc dignissim a diam i
-            lacinia. Integer id mi enim. Vestibulum euismod porta orci, vitae
-            facilisis nibh ornare ut. Phasellus sapien massa, efficitur aliquam
-            t incidunt sed, condimentum vitae lorem. Nulla condimentum tristique
-            ligula, eu hendrerit lacus lacinia vitae. Pellentesque scelerisque
-            non elit at ultricies..
-          </p>
-        </div>
-      </section>
+    <!-- Each Section has an ID (used for the anchor) 
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Section 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-      <section id="sec2" data-nav="section 2">
-        <div class="landing_container">
-          <h2>section 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            diam ornare, tincidunt odio at, convallis lacus. Duis varius pretium
-            turpis sit amet iaculis. Maecenas dictum, tortor eleifend tempor
-            placerat, lacus urna tempus ligula, eu accumsan nunc dolor sed arcu.
-            Donec ullamcorper erat tempor arcu rutrum condimentum. Donec
-            tincidunt euismod ante sed dignissim. Pellentesque at sem cursus,
-            hendrerit ante ornare, tristique velit. Proin malesuada ante eget
-            nibh lacinia imperdiet. Curabitur sed venenatis turpis, sed pretium
-            ante. Phasellus cursus pretium purus, sed mattis ante vulputate non.
-            Ut lorem ante, eleifend sed pretium sit amet, ornare quis augue.
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Vivamus dignissim commodo volutpat.
-            Vestibulum dignissim laoreet elementum. Cras id condimentum nunc.
-            Phasellus ultricies cursus nunc ut commodo. Quisque nec nisl vel leo
-            rhoncus Phasellus ullamcorper, ante quis cursus fringilla, lacus
-            quam mollis justo, euismod sagittis enim eros eu eros. Donec metus
-            dui, tempor dictum ex a, scelerisque tincidunt enim. Nunc finibus
-            vitae enim sed faucibus. Praesent auctor at eros nec gravida. Sed
-            congue tristique ligula sit amet bibendum. Aliquam venenatis
-            fringilla neque sed laoreet. Fusce lacinia leo arcu, in elementum
-            orci sodales ut. Cras aliquam interdum eros tempus molestie.
-            Phasellus auctor tortor eget interdum varius. Mauris rhoncus magna
-            vel vestibulum pharetra. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Vestibulum neque purus,
-            gravida quis egestas at, pulvinar sed mauris. Nam posuere Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-            blandit quam. Fusce lacinia pulvinar purus. Nunc dignissim a diam i
-            lacinia. Integer id mi enim. Vestibulum euismod porta orci, vitae
-            facilisis nibh ornare ut. Phasellus sapien massa, efficitur aliquam
-            t incidunt sed, condimentum vitae lorem. Nulla condimentum tristique
-            ligula, eu hendrerit lacus lacinia vitae. Pellentesque scelerisque
-            non elit at ultricies..
-          </p>
-        </div>
-      </section>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Section 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-      <section id="sec3" data-nav="section 3">
-        <div class="landing_container">
-          <h2>section 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            diam ornare, tincidunt odio at, convallis lacus. Duis varius pretium
-            turpis sit amet iaculis. Maecenas dictum, tortor eleifend tempor
-            placerat, lacus urna tempus ligula, eu accumsan nunc dolor sed arcu.
-            Donec ullamcorper erat tempor arcu rutrum condimentum. Donec
-            tincidunt euismod ante sed dignissim. Pellentesque at sem cursus,
-            hendrerit ante ornare, tristique velit. Proin malesuada ante eget
-            nibh lacinia imperdiet. Curabitur sed venenatis turpis, sed pretium
-            ante. Phasellus cursus pretium purus, sed mattis ante vulputate non.
-            Ut lorem ante, eleifend sed pretium sit amet, ornare quis augue.
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Vivamus dignissim commodo volutpat.
-            Vestibulum dignissim laoreet elementum. Cras id condimentum nunc.
-            Phasellus ultricies cursus nunc ut commodo. Quisque nec nisl vel leo
-            rhoncus Phasellus ullamcorper, ante quis cursus fringilla, lacus
-            quam mollis justo, euismod sagittis enim eros eu eros. Donec metus
-            dui, tempor dictum ex a, scelerisque tincidunt enim. Nunc finibus
-            vitae enim sed faucibus. Praesent auctor at eros nec gravida. Sed
-            congue tristique ligula sit amet bibendum. Aliquam venenatis
-            fringilla neque sed laoreet. Fusce lacinia leo arcu, in elementum
-            orci sodales ut. Cras aliquam interdum eros tempus molestie.
-            Phasellus auctor tortor eget interdum varius. Mauris rhoncus magna
-            vel vestibulum pharetra. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Vestibulum neque purus,
-            gravida quis egestas at, pulvinar sed mauris. Nam posuere Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-            blandit quam. Fusce lacinia pulvinar purus. Nunc dignissim a diam i
-            lacinia. Integer id mi enim. Vestibulum euismod porta orci, vitae
-            facilisis nibh ornare ut. Phasellus sapien massa, efficitur aliquam
-            t incidunt sed, condimentum vitae lorem. Nulla condimentum tristique
-            ligula, eu hendrerit lacus lacinia vitae. Pellentesque scelerisque
-            non elit at ultricies..
-          </p>
-        </div>
-      </section>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Section 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-      <section id="sec4" data-nav="section 4">
-        <div class="landing_container">
-          <h2>section 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            diam ornare, tincidunt odio at, convallis lacus. Duis varius pretium
-            turpis sit amet iaculis. Maecenas dictum, tortor eleifend tempor
-            placerat, lacus urna tempus ligula, eu accumsan nunc dolor sed arcu.
-            Donec ullamcorper erat tempor arcu rutrum condimentum. Donec
-            tincidunt euismod ante sed dignissim. Pellentesque at sem cursus,
-            hendrerit ante ornare, tristique velit. Proin malesuada ante eget
-            nibh lacinia imperdiet. Curabitur sed venenatis turpis, sed pretium
-            ante. Phasellus cursus pretium purus, sed mattis ante vulputate non.
-            Ut lorem ante, eleifend sed pretium sit amet, ornare quis augue.
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Vivamus dignissim commodo volutpat.
-            Vestibulum dignissim laoreet elementum. Cras id condimentum nunc.
-            Phasellus ultricies cursus nunc ut commodo. Quisque nec nisl vel leo
-            rhoncus Phasellus ullamcorper, ante quis cursus fringilla, lacus
-            quam mollis justo, euismod sagittis enim eros eu eros. Donec metus
-            dui, tempor dictum ex a, scelerisque tincidunt enim. Nunc finibus
-            vitae enim sed faucibus. Praesent auctor at eros nec gravida. Sed
-            congue tristique ligula sit amet bibendum. Aliquam venenatis
-            fringilla neque sed laoreet. Fusce lacinia leo arcu, in elementum
-            orci sodales ut. Cras aliquam interdum eros tempus molestie.
-            Phasellus auctor tortor eget interdum varius. Mauris rhoncus magna
-            vel vestibulum pharetra. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Vestibulum neque purus,
-            gravida quis egestas at, pulvinar sed mauris. Nam posuere Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-            blandit quam. Fusce lacinia pulvinar purus. Nunc dignissim a diam i
-            lacinia. Integer id mi enim. Vestibulum euismod porta orci, vitae
-            facilisis nibh ornare ut. Phasellus sapien massa, efficitur aliquam
-            t incidunt sed, condimentum vitae lorem. Nulla condimentum tristique
-            ligula, eu hendrerit lacus lacinia vitae. Pellentesque scelerisque
-            non elit at ultricies..
-          </p>
-        </div>
-      </section>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Section 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
-      <section id="sec5" data-nav="section 5">
-        <div class="landing_container">
-          <h2>section 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            diam ornare, tincidunt odio at, convallis lacus. Duis varius pretium
-            turpis sit amet iaculis. Maecenas dictum, tortor eleifend tempor
-            placerat, lacus urna tempus ligula, eu accumsan nunc dolor sed arcu.
-            Donec ullamcorper erat tempor arcu rutrum condimentum. Donec
-            tincidunt euismod ante sed dignissim. Pellentesque at sem cursus,
-            hendrerit ante ornare, tristique velit. Proin malesuada ante eget
-            nibh lacinia imperdiet. Curabitur sed venenatis turpis, sed pretium
-            ante. Phasellus cursus pretium purus, sed mattis ante vulputate non.
-            Ut lorem ante, eleifend sed pretium sit amet, ornare quis augue.
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Vivamus dignissim commodo volutpat.
-            Vestibulum dignissim laoreet elementum. Cras id condimentum nunc.
-            Phasellus ultricies cursus nunc ut commodo. Quisque nec nisl vel leo
-            rhoncus Phasellus ullamcorper, ante quis cursus fringilla, lacus
-            quam mollis justo, euismod sagittis enim eros eu eros. Donec metus
-            dui, tempor dictum ex a, scelerisque tincidunt enim. Nunc finibus
-            vitae enim sed faucibus. Praesent auctor at eros nec gravida. Sed
-            congue tristique ligula sit amet bibendum. Aliquam venenatis
-            fringilla neque sed laoreet. Fusce lacinia leo arcu, in elementum
-            orci sodales ut. Cras aliquam interdum eros tempus molestie.
-            Phasellus auctor tortor eget interdum varius. Mauris rhoncus magna
-            vel vestibulum pharetra. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Vestibulum neque purus,
-            gravida quis egestas at, pulvinar sed mauris. Nam posuere Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-            blandit quam. Fusce lacinia pulvinar purus. Nunc dignissim a diam i
-            lacinia. Integer id mi enim. Vestibulum euismod porta orci, vitae
-            facilisis nibh ornare ut. Phasellus sapien massa, efficitur aliquam
-            t incidunt sed, condimentum vitae lorem. Nulla condimentum tristique
-            ligula, eu hendrerit lacus lacinia vitae. Pellentesque scelerisque
-            non elit at ultricies..
-          </p>
-        </div>
-      </section>
-    </main>
-  </body>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+</body>
+<link rel="stylesheet"  href="ja.js">
 </html>
-<script src="ja.js"></script>
+
+
