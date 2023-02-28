@@ -1,42 +1,80 @@
-const navBar = document.querySelector(".navbar__menu");
-const navList = document.querySelector("#navbar__list");
-const sections = document.querySelectorAll("section");
-const footer = document.querySelector("footer");
-const header = document.querySelector(".page__header");
-// End Global Variables
 
-// Start build the nav
-function buildNav() {
-  sections.forEach((section) => {
-    //Create the li elements that contained inside the ul
-    const navButton = document.createElement("li");
-    //Insert the html text to  the li
-    navButton.insertAdjacentHTML(
-      "afterbegin",
-      `<a href="#${section.id}" class="menu__link">${section.dataset.nav}</a>`
-    );
-    //Append the li to the ul
-    navList.appendChild(navButton);
+// navigation global var
+const navigation = document.getElementById('navbar__list');
+// sections global var
+const sections = document.querySelectorAll('section');
 
-    //scrollBehavior Function Invoke
-    scrollBehavior(navButton, section);
-  });
-  //Append the ul to the nav
-  navBar.appendChild(navList);
-}
 
-//Build Nav Function Invoke
-buildNav();
 
-//End build the nav
+// build the nav
 
-// Start of Scroll to anchor ID using scrollTO event
-function scrollBehavior(navButton, section) {
-  navButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: "smooth",
+const navBuilder = () => {
+
+    let navUI = '';
+    sections.forEach(section => {
+
+        const sectionID = section.id;
+        const sectionDataNav = section.dataset.nav;
+
+        navUI += `<li><a class="menu__link" href="#${sectionID}">${sectionDataNav}</a></li>`;
+
     });
-  });
-}
+    
+    navigation.innerHTML = navUI;
+
+
+};
+
+navBuilder();
+
+// Add class 'active' to section when near top of viewport
+
+const offset = (section) => {
+    return Math.floor(section.getBoundingClientRect().top);
+};
+
+
+const removeActive = (section) => {
+    section.classList.remove('your-active-class');
+    section.style.cssText = "background-color: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%)";
+};
+// adding the active class
+const addActive = (conditional, section) => {
+    if (conditional) {
+        section.classList.add('your-active-class');
+        section.style.cssText = "background-color: yellow;";
+    };
+};
+
+//implementating the actual function
+
+const sectionActivation = () => {
+    sections.forEach(section => {
+        const elementOffset = offset(section);
+
+        inviewport = () => elementOffset < 150 && elementOffset >= -150;
+
+        removeActive(section);
+        addActive(inviewport(), section);
+    });
+};
+
+window.addEventListener('scroll', sectionActivation);
+
+// Scroll to anchor ID using scrollTO event
+
+const scrolling = () => {
+
+    const links = document.querySelectorAll('.navbar__menu a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            for (i = 0; i < sections; i++) {
+                sections[i].addEventListener("click", sectionScroll(link));
+            }
+        });
+    });
+
+};
+
+scrolling();
+
